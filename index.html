@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rainheart Galario | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -17,10 +20,10 @@
     <nav class="navbar">
       <h1 class="logo">Rainheart<span>Dev</span></h1>
       <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -32,43 +35,323 @@
       <h2 class="name"><span class="highlight">Rainheart Galario</span></h2>
       <p><span class="typing">A full-stack Web Developer</span></p>
     </br>
-      <a href="projects.html" class="squishy squishy-classic">
+      <a href="#projects" class="squishy squishy-classic">
         View My Work
       </a>
     </div>
     <div class="hero-img">
-      <img src="images/profile.png" alt="Profile Picture">
+      <div class="profile-frame">
+        <img src="images/profile.png" alt="Profile Picture">
+      </div>
     </div>
   </section>
 
-  <!-- Example Sections -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. I love building modern websites.</p>
-  </section>
-
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Laravel</li>
-    </ul>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">Project 1</div>
-      <div class="project-card">Project 2</div>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a passionate full-stack web developer with over 3 years of experience crafting digital experiences that make a difference. Based in the Philippines, I specialize in building modern, responsive web applications that combine beautiful design with powerful functionality.
+          </p>
+          <p class="about-details">
+            My journey in web development started with a curiosity about how websites work, which quickly evolved into a deep passion for creating user-centric digital solutions. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Get in touch at <a href="mailto:rainheart@example.com">rainheart@example.com</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3 class="category-title">Frontend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">⚛️</div>
+              <h4>React.js</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🎨</div>
+              <h4>CSS3/SASS</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📱</div>
+              <h4>Responsive Design</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚡</div>
+              <h4>JavaScript ES6+</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3 class="category-title">Backend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">🐘</div>
+              <h4>PHP/Laravel</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🟢</div>
+              <h4>Node.js</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🗄️</div>
+              <h4>MySQL/MongoDB</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="82"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🔧</div>
+              <h4>RESTful APIs</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="87"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="category-title">Tools & Technologies</h3>
+          <div class="tools-grid">
+            <div class="tool-item">Git & GitHub</div>
+            <div class="tool-item">Docker</div>
+            <div class="tool-item">AWS</div>
+            <div class="tool-item">Figma</div>
+            <div class="tool-item">Webpack</div>
+            <div class="tool-item">Jest</div>
+            <div class="tool-item">Postman</div>
+            <div class="tool-item">VS Code</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Rainheart Galario. All rights reserved.</p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+            <div class="project-placeholder">E-Commerce Platform</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Modern E-Commerce Platform</h3>
+            <p class="project-description">
+              A full-featured e-commerce solution built with Laravel and React. Features include user authentication, product management, shopping cart, payment integration, and admin dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+            <div class="project-placeholder">Task Management App</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TaskFlow - Project Management</h3>
+            <p class="project-description">
+              A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface for project organization.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+            <div class="project-placeholder">Weather Dashboard</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-description">
+              A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Features dark/light mode and responsive design.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">OpenWeather API</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+            <div class="project-placeholder">Portfolio Website</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-description">
+              A modern, responsive portfolio website showcasing my work and skills. Features smooth animations, interactive elements, and optimized performance.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">GSAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:rainheart@example.com">rainheart@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/rainheart" target="_blank">linkedin.com/in/rainheart</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/rainheart" target="_blank">github.com/rainheart</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div class="contact-details">
+              <h4>Portfolio</h4>
+              <a href="https://rainheart.dev" target="_blank">rainheart.dev</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form class="contact-form-content">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Rainheart Galario. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Twitter</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
